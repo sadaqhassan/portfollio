@@ -1,7 +1,8 @@
-
+"use client"
 import React from "react";
-import Navbar from "./Nav";
 import Link from "next/link";
+
+import { Download } from "lucide-react"
 
 function HomePage() {
 
@@ -16,7 +17,7 @@ function HomePage() {
 
   return (
  <div>
-<main className="relative isolate flex min-h-screen items-center overflow-hidden bg-slate-950 px-6 pt-24 md:px-16">
+<main className="flex flex-col min-h-screen items-center justify-center  overflow-hidden bg-slate-950 px-6 pt-24 md:px-16">
 
   {/* Background image: 20% opacity */}
   <div
@@ -27,15 +28,14 @@ function HomePage() {
   />
 
   {/* Homepage content */}
-  <div className="max-w-2xl text-white">
-    <p className="font-semibold tracking-widest text-blue-400">
-      FULL-STACK DEVELOPER
-    </p>
+  <div className="max-w-6xl text-white">
 
     <h1 className="mt-4 text-5xl font-extrabold md:text-7xl">
       Hi, I'm <span className="text-blue-500">Sadak</span>
     </h1>
-
+    <p className="font-semibold tracking-widest mt-4 text-blue-400">
+      FULL-STACK DEVELOPER
+    </p>
     <p className="mt-5 text-lg leading-8 text-gray-300">
       I build modern websites and scalable web applications.
     </p>
@@ -44,10 +44,18 @@ function HomePage() {
           using React, Next.js, Node.js and MongoDB.
         </p>
 
-        <Link href={"/projects"} className="mt-18 rounded-lg bg-blue-600 px-7 py-3
+      <div className="flex mt-4">
+        <Link href={"/projects"} className=" rounded-lg bg-blue-600 px-7 py-3
           font-semibold transition hover:bg-blue-700">
           Explore My Work
         </Link>
+        <Link href={"/"}
+        download={"/cv/Sadak_Hassan_Ahmed_CV_2026pdf.pdf"}
+        className=" flex rounded-lg ml-4 bg-white text-black px-4 py-3
+          font-semibold transition">
+          <Download/>Download cv
+        </Link>
+       </div>
   </div>
 
   
@@ -65,7 +73,7 @@ function HomePage() {
           ))}
         </div>
 
-       </div>
+      </div>
   );
 }
 
