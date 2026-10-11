@@ -49,11 +49,10 @@ function HomePage() {
           font-semibold transition hover:bg-blue-700">
           Explore My Work
         </Link>
-        <Link href={"/"}
-        download={"/cv/Sadak_Hassan_Ahmed_CV_2026pdf.pdf"}
+        <Link href={"/cv"}
         className=" flex rounded-lg ml-4 bg-white text-black px-4 py-3
           font-semibold transition">
-          <Download/>Download cv
+          <Download/>My Cv
         </Link>
        </div>
   </div>
