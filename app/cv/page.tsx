@@ -117,7 +117,7 @@ export default function CV() {
           Explore My Work
         </Link>
         <Link href={"/"}
-        download={"/cv/Sadak_Hassan_Ahmed_CV_2026pdf.pdf"}
+        download={"/Sadak_Hassan_Ahmed_CV_2026pdf.pdf"}
         className=" flex rounded-lg ml-4 bg-white text-black px-4 py-3
           font-semibold transition">
           <Download/>Download cv
