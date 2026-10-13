@@ -122,7 +122,7 @@ export default function CV() {
           font-semibold transition">
           <Download/>Download cv
         </Link>
-       </div>
+      </div>
       <div
         className="mx-auto flex w-[8.5in] min-h-[11in] bg-white shadow-xl print:shadow-none"
         style={{ fontFamily: "Calibri, Carlito, 'Segoe UI', Arial, sans-serif" }}
