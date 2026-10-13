@@ -116,7 +116,7 @@ export default function CV() {
           font-semibold transition hover:bg-blue-700">
           Explore My Work
         </Link>
-        <Link href={"/"}
+        <Link href={"/Sadak_Hassan_Ahmed_CV_2026pdf.pdf"}
         download={"/Sadak_Hassan_Ahmed_CV_2026pdf.pdf"}
         className=" flex rounded-lg ml-4 bg-white text-black px-4 py-3
           font-semibold transition">
