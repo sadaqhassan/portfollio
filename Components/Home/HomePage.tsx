@@ -45,9 +45,9 @@ function HomePage() {
         </p>
 
       <div className="flex mt-4">
-        <Link href={"/projects"} className=" rounded-lg bg-blue-600 px-7 py-3
+        <Link href={"/services/drow-to-code"} className=" rounded-lg bg-blue-600 px-7 py-3
           font-semibold transition hover:bg-blue-700">
-          Explore My Work
+          Drow to Code
         </Link>
         <Link href={"/cv"}
         className=" flex rounded-lg ml-4 bg-white text-black px-4 py-3
