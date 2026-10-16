@@ -3,13 +3,16 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { StarsIcon } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "about" },
-  { name: "Skills", href: "skills" },
-  { name: "Projects", href: "projects" },
-  { name: "Contact", href: "contact" },
+  { name: "About", href: "/about" },
+  { name: "Skills", href: "/skills" },
+  { name: "Projects", href: "/projects" },
+  { name: "Contact", href: "/contact" },
+  { name: "services", href: "/services" },
+
 ];
 
 export default function Navbar() {
@@ -35,14 +38,14 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-gray-300 transition hover:text-blue-400"
+              className={`text-sm font-medium text-gray-300 transition hover:text-blue-400 ${link.name === "services" && "border-2 px-2 py-1 rounded"}`}
             >
-              {link.name}
+              {`${link.name === "services" ? <StarsIcon/> + link.name : link.name}`}
             </Link>
           ))}
 
           <Link
-            href="contact"
+            href="contact" 
             className="rounded-lg bg-blue-600 px-5 py-2.5 font-semibold text-white transition hover:bg-blue-700"
           >
             Hire Me
